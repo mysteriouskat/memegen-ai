@@ -268,7 +268,7 @@ const App = () => {
 
       {/* Meme Generation Modal */}
       {showModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
           <div className={`relative w-full max-w-4xl p-8 rounded-xl shadow-2xl ${darkMode ? 'bg-gray-800' : 'bg-white'}`}>
             <button
               onClick={handleCloseModal}
