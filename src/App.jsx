@@ -47,7 +47,7 @@ const App = () => {
     setIsLoading(true); // Add this at start
     setGeneratedMemeUrl(''); // Clear previous meme  
     try {
-      const res = await fetch('http://127.0.0.1:8000/generate_meme', {
+      const res = await fetch('https://mememind-backend-production.up.railway.app/generate_meme', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text: memePrompt, type: selectedStyle }),
